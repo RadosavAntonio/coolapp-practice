@@ -1,9 +1,9 @@
 import * as constant from "./color.constant"
 
 export const initialState = {
-  red: 120,
-  blue: 0,
-  green: 0,
+  red: 0,
+  blue: 255,
+  green: 255,
 }
 
 export const colorReducer = (state = initialState, action) => {

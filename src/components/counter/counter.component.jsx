@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
+import * as CS from './counter.styled'
 
 export const Counter = () => {
-  console.log("Apasaaaaaaaaaaaaaa")
+  // console.log("Apasaaaaaaaaaaaaaa")
   const [value, setValue] = useState(10)
 
   const handleIncrease = (value) => {
@@ -16,7 +17,7 @@ export const Counter = () => {
 
 
   return(
-    <div>
+    <CS.Container>
       <div>
         Valeu: {value}
       </div>
@@ -26,6 +27,6 @@ export const Counter = () => {
       <button onClick={() => handleDecrease(value)}>
         decrease
       </button>
-    </div>
+    </CS.Container>
   )
 }
